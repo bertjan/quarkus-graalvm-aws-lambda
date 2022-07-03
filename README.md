@@ -26,9 +26,7 @@ mvn archetype:generate \
 
 
 ## Build & native image generation
-`scripts/build.sh`
-or:
-`mvn package -Dnative -Dquarkus.native.container-build=true`
+`scripts/build.sh` (or `mvn package -Dnative -Dquarkus.native.container-build=true`)
 
 Note: if you're running this on an M1 mac this will take a long time because the Docker image used to build the native image is emulated via Rosetta.  
 A workaround can be to develop on a mac and build/deploy on an Intel machine/build server.
@@ -36,9 +34,7 @@ A workaround can be to develop on a mac and build/deploy on an Intel machine/bui
 
 ## Running the native image locally for testing purposes
 Running the lambda:
-`scripts/run-local.sh`
-or:
-`sam local start-api --template target/sam.native.yaml`
+`scripts/run-local.sh` (or `sam local start-api --template target/sam.native.yaml`)
 
 Testing the lambda:
 `curl localhost:3000/hello`
@@ -49,9 +45,7 @@ should output:
 Edit `target/sam.native.yaml` to suit your needs, for example tweak the `MemorySize`
 
 ## Deploying
-`scripts/deploy.sh`
-or:
-`sam deploy -t target/sam.native.yaml -g`
+`scripts/deploy.sh` (or `sam deploy -t target/sam.native.yaml -g`)
 
 Go with the default values:
 ```
@@ -70,6 +64,7 @@ Go with the default values:
 	SAM configuration file [samconfig.toml]: 
 	SAM configuration environment [default]: 
 ```
+
 Note: the stack that will be deployed will be named `sam-app` if you go for the defaults offered by `sam`.  
 If you already have a lambda deployed with name `sam-app`, it will be replaced by this lambda! Update the name accordingly if you don't want to overwrite an existing `sam-app`.
 
