@@ -69,6 +69,7 @@ Go with the default values:
 	SAM configuration file [samconfig.toml]: 
 	SAM configuration environment [default]: 
 ```
+Note: if you already have a lambda deployed with name "sam-app", it will be replaced by this lambda! Update the name accordingly.
 
 The `sam deploy` command will return the URL of the deployed lambda+API gateway.
 
