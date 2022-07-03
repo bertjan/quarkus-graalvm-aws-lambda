@@ -75,3 +75,7 @@ Use the URL from the `sam deploy` command output.
 Test the lambda via `curl <url>/hello`
 
 This should output `Hi from NLJUG!`.
+
+## Deleting the lambda + API gateway
+`scripts/destroy.sh` (or `sam delete`)
+This will delete the lambda, API gateway and any associated resources. 
