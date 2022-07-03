@@ -1,6 +1,8 @@
 # quarkus-graalvm-aws-lambda
-Skeleton for a Quarkus app that compiles as a GraalVM native image and deploys to AWS Lambda.  
-This skeleton is based on the NLJUG events app backend. 
+Skeleton for a Quarkus app that exposes as REST endpoint, compiles as a GraalVM native image, deploys to AWS Lambda and exposes the REST endpoint via AWS API gateway.  
+You can build & test the app locally like a regular Quarkus/REST application, and the included tooling automatically builds and deploys this to AWS lambda.  
+  
+This skeleton is based on the NLJUG events app backend.   
 
 ## Getting started
 Prerequisites:
@@ -24,6 +26,10 @@ mvn archetype:generate \
 -DarchetypeVersion=2.10.1.Final
 ```
 
+
+## Development / local testing
+Start a local application using the Quarkus dev mode with `mvn quarkus:dev`.
+The app will start running on `http://localhost:8080` and you can build/test it like a regular REST endpoint.
 
 ## Build & native image generation
 `scripts/build.sh` (or `mvn package -Dnative -Dquarkus.native.container-build=true`)
