@@ -6,7 +6,7 @@ This skeleton is based on the NLJUG events app backend.
 Prerequisites:
 - Java 11
 - Maven
-- AWS CLI (see https://github.com/bertjan/quarkus-graalvm-aws-lambda)
+- AWS CLI (see https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - AWS SAM CLI (see https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 - AWS account
 - Configured AWS CLI (via `aws configure`)
