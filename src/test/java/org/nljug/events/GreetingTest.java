@@ -1,4 +1,4 @@
-package org.nljug;
+package org.nljug.events;
 
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.RestAssured;
