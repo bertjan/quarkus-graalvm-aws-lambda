@@ -5,12 +5,13 @@ Skeleton for a Quarkus app that compiles as a GraalVM native image and deploys t
 Prerequisites:
 - Java 11
 - Maven
-- AWS CLI
-- AWS SAM CLI
-- AWS account + configured AWS CLI (via `aws configure`)
+- AWS CLI (see https://github.com/bertjan/quarkus-graalvm-aws-lambda)
+- AWS SAM CLI (see https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+- AWS account
+- Configured AWS CLI (via `aws configure`)
 
 ## Howto
-This skeleton is based on the following guide: https://quarkus.io/guides/amazon-lambda-http
+This skeleton is based on the following guide: https://quarkus.io/guides/amazon-lambda-http - kudos to the Quarkus team for writing it!
 
 ## Generation
 This skeleton was generated using the `quarkus-amazon-lambda-rest-archetype`:
