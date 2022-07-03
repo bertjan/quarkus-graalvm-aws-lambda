@@ -44,7 +44,7 @@ Testing the lambda:
 should output:
 `Hi from NLJUG!`
 
-## Lambda configuration
+## Lambda deployment configuration
 Edit `target/sam.native.yaml` to suit your needs, for example tweak the `MemorySize`
 
 ## Deploying
