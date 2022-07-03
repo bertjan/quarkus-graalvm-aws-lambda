@@ -1,5 +1,6 @@
 # quarkus-graalvm-aws-lambda
-Skeleton for a Quarkus app that compiles as a GraalVM native image and deploys to AWS Lambda, based on the NLJUG events app backend.
+Skeleton for a Quarkus app that compiles as a GraalVM native image and deploys to AWS Lambda.
+This skeleton is based on the NLJUG events app backend.
 
 ## Getting started
 Prerequisites:
