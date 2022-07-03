@@ -52,6 +52,24 @@ Edit `target/sam.native.yaml` to suit your needs, for example tweak the `MemoryS
 or:
 `sam deploy -t target/sam.native.yaml -g`
 
+Go with the default values:
+```
+	Setting default arguments for 'sam deploy'
+	=========================================
+	Stack Name [sam-app]: 
+	AWS Region [eu-west-1]: 
+	#Shows you resources changes to be deployed and require a 'Y' to initiate deploy
+	Confirm changes before deploy [y/N]: y
+	#SAM needs permission to be able to create roles to connect to the resources in your template
+	Allow SAM CLI IAM role creation [Y/n]: y
+	#Preserves the state of previously provisioned resources when an operation fails
+	Disable rollback [y/N]: n
+	QuarkusGraalvmAwsLambdaNative may not have authorization defined, Is this okay? [y/N]: y
+	Save arguments to configuration file [Y/n]: y
+	SAM configuration file [samconfig.toml]: 
+	SAM configuration environment [default]: 
+```
+
 The `sam deploy` command will return the URL of the deployed lambda+API gateway.
 
 ## Testing the production deployment
