@@ -1,7 +1,7 @@
 package org.nljug.events;
 
-import io.quarkus.test.junit.NativeImageTest;
+import io.quarkus.test.junit.QuarkusIntegrationTest;
 
-@NativeImageTest
+@QuarkusIntegrationTest
 public class GreetingIT extends GreetingTest {
 }

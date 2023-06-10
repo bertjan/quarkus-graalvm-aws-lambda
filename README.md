@@ -23,7 +23,7 @@ This skeleton was generated using the `quarkus-amazon-lambda-rest-archetype`:
 mvn archetype:generate \
 -DarchetypeGroupId=io.quarkus \
 -DarchetypeArtifactId=quarkus-amazon-lambda-rest-archetype \
--DarchetypeVersion=2.10.1.Final
+-DarchetypeVersion=3.1.1.Final
 ```
 
 
@@ -34,11 +34,11 @@ The app will start running on `http://localhost:8080` and you can build/test it 
 ## Build & native image generation
 `scripts/build.sh` (or `mvn package -Dnative -Dquarkus.native.container-build=true`)
 
-Note: if you're running this on an M1 mac, the native image build can take a long time (15+ minutes).
+~~Note: if you're running this on an M1 mac, the native image build can take a long time (15+ minutes).
 You'll see this message during the build process: `WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested`. The reason is that the source Docker image is an amd64 image, you're running on arm64 (M1) and building a target image for amd64, and the amd64<-arm64 mismatch needs to be emulated.
 On an Intel/amd64 machine, the native image build should run a lot faster (1-3 minutes on a fast machine).
-
-A workaround can be to develop on a mac and build/deploy on an Intel machine/build server.
+A workaround can be to develop on a mac and build/deploy on an Intel machine/build server.~~
+Building the native image on a M1 Macbook Pro takes just over a minute. 
 
 ## Running the native image locally for testing purposes
 Running the lambda:
